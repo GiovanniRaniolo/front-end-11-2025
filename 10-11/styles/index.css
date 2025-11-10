@@ -1,0 +1,31 @@
+@import url(./blog.css);
+@import url(./contatti.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  width: 100px;
+}
+
+p {
+  line-height: 34px;
+}
+
+.title {
+  color: red;
+}

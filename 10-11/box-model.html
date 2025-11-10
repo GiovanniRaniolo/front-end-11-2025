@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      div {
+        background-color: lightcoral;
+        width: 80vw;
+        height: 80vh;
+        /* min-height: 100px; */
+        border: 10px solid blue;
+        position: relative;
+      }
+
+      span {
+        background-color: violet;
+        border-radius: 50%;
+        padding: 30px;
+        position: absolute;
+        bottom: -35px;
+        right: -30px;
+      }
+
+      :hover div {
+        background-color: lightblue;
+      }
+
+      p {
+        font-size: 1em;
+        /* display: none; */
+      }
+
+      section {
+        background-color: red;
+        display: none;
+        /* visibility: hidden; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>Section</section>
+      <!-- <p>Sono un paragrafo</p> -->
+      <span></span>
+    </div>
+  </body>
+</html>
