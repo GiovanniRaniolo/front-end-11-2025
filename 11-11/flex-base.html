@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Box</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Manrope:wght@200..800&family=Moon+Dance&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto+Slab:wght@100..900&family=SUSE:wght@100..800&family=Sigmar&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
       * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: "Work Sans", sans-serif;
       }
       section {
-        background-color: lightgray;
+        /* background: linear-gradient(90deg, rgba(42, 155, 149, 1) 0%, rgba(9, 26, 20, 1) 70%); */
+
         display: flex;
         gap: 10px;
         justify-content: center;
@@ -27,6 +32,13 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+      }
+
+      .image-cover {
+        background-image: url("./img/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
       }
 
       h2 {
@@ -52,11 +64,18 @@
           <span>20$</span>
         </footer>
       </div>
-      <div>Box2</div>
+      <div class="image-cover">Box2</div>
       <div>Box3</div>
       <div>Box4</div>
       <div>Box5</div>
       <div>Box6</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quaerat, recusandae porro temporibus ut nulla ipsa itaque ab praesentium fugit. Adipisci quasi architecto
+        fugiat, minus harum ipsum corporis aut repellat laborum deleniti perferendis, iure illo enim nisi! Modi, quasi aliquam. Iure dicta adipisci, ullam consequuntur delectus
+        dolor dolorem doloribus magni nam, voluptas, optio voluptatum vel rem ea officiis ex omnis quod excepturi modi vitae aliquam qui magnam repudiandae! Magnam ex a porro
+        assumenda aperiam iure, facilis ducimus sed consequatur officia ipsam enim perspiciatis fugiat blanditiis corrupti ea libero rem sapiente! Illum adipisci aut delectus. Eos
+        laborum a molestiae autem quaerat.
+      </p>
     </section>
   </body>
 </html>
