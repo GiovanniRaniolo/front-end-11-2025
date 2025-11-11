@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Shrink</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        border: 2px solid orange;
+      }
+
+      .box {
+        flex-basis: 150px;
+        color: darkorange;
+        border: 1px solid black;
+      }
+
+      .shrink {
+        width: 250px;
+      }
+      .box1 {
+        flex-shrink: 10;
+      }
+      .box2 {
+        flex-shrink: 20;
+      }
+      .box3 {
+        flex-shrink: 30;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container shrink">
+      <div class="box box1">A</div>
+      <div class="box box2">B</div>
+      <div class="box box3">C</div>
+    </div>
+  </body>
+</html>
