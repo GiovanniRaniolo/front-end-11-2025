@@ -1,0 +1,11 @@
+:root {
+  --colore-primario: #4caf50;
+  --colore-secondario: #fdb3b3;
+  --colore-sfondo: #b9b7b7;
+  --testo-base: 18px;
+}
+
+h1 {
+  color: var(--colore-primario);
+  font-size: var(--testo-base);
+}
