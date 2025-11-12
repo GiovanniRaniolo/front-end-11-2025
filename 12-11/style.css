@@ -3,6 +3,20 @@
   --colore-secondario: #fdb3b3;
   --colore-sfondo: #b9b7b7;
   --testo-base: 18px;
+  --bg-color: white;
+  --text-color: black;
+  --bg-color-dark: rgb(70, 69, 69);
+  --text-color-dark: #fffedd;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
 }
 
 h1 {
