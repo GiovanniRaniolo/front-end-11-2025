@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementi Interattivi</title>
+  </head>
+  <body>
+    <form action="mailto:mail@gmail.com">
+      <label for="name">Nome</label>
+      <input type="text" />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" />
+      <br />
+      <label for="nazionalita">Nazionalità</label>
+      <select name="nazionalita" required>
+        <option value="" disabled selected>Fai la tua scelta</option>
+        <optgroup label="Europa">
+          <option value="italiana">Italiana</option>
+          <option value="tedesca">Tedesca</option>
+          <option value="francese">Francese</option>
+        </optgroup>
+        <option value="straniera">Straniera</option>
+      </select>
+      <br />
+      <label for="frutta">Frutta</label>
+      <input type="text" id="frutta" name="frutta" list="frutti" placeholder="Scegli o digita una frutta" required />
+      <datalist id="frutti">
+        <option value="Mela"></option>
+        <option value="Banana"></option>
+        <option value="Arancia"></option>
+        <option value="Pera"></option>
+        <option value="Fragola"></option>
+      </datalist>
+
+      <br />
+      <label for="">sesso</label>
+      <label><input type="radio" name="scelta" value="opzione1" checked /> maschile</label>
+      <label><input type="radio" name="scelta" value="opzione2" /> femminile</label>
+      <label><input type="radio" name="scelta" value="opzione3" /> non voglio dichiararlo</label>
+      <br />
+
+      <input type="checkbox" name="iscriviti" checked /> Iscriviti alla newsletter</input>
+      <br />
+      <label for="message">Messaggio</label>
+      <br />
+      <textarea></textarea>
+      <br />
+      <input type="submit" value="Invia" />
+      <input type="reset" value="Resetta il form" />
+      <input type="button" value="Cliccami" />
+    </form>
+  </body>
+</html>
