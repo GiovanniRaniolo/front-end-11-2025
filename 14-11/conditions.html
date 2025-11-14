@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS1</title>
+  </head>
+  <body>
+    <h1>Condizioni , Cicli e Funzioni in JS</h1>
+    <script>
+      let a = 20;
+      if (a <= 18) {
+        console.log("sei minorenne");
+      } else {
+        console.log("sei maggiorenne");
+      }
+
+      let voto = 85;
+      if (voto >= 90) {
+        console.log("hai preso A");
+      } else if (voto >= 80) {
+        console.log("hai preso B");
+      } else if (voto >= 70) {
+        console.log("hai preso C");
+      } else if (voto >= 60) {
+        console.log("hai preso D");
+      } else {
+        console.log("hai preso F");
+      }
+
+      //Ciclo di for
+      for (let num = -1; num <= 3; num++) {
+        console.log("Numero:", num);
+      }
+
+      //Funzioni
+      function saluta(nome) {
+        console.log("Ciao " + nome + "!");
+      }
+
+      let user = "Alice Rossi della Rovere";
+
+      saluta("Giovanni");
+      saluta("Anna");
+      saluta("Luca");
+      saluta(10);
+      saluta(user);
+
+      //somma di tre numeri
+      function somma(a, b, c, d) {
+        return a + b + c + d;
+      }
+
+      let risultato = somma(5, 10, 15); //NaN
+      console.log(risultato);
+
+      let risultato2 = somma(1, 2, 3, 4);
+      console.log(risultato2);
+    </script>
+  </body>
+</html>
