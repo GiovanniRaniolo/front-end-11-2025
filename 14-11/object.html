@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h1>Object in JS</h1>
+    <script>
+      let car = {
+        marca: "Toyota",
+        modello: "Corolla",
+        anno: 2020,
+        colore: "Blu",
+        targa: "AB123CD",
+      };
+
+      console.log(car);
+      console.table(car);
+      console.log(car.targa);
+
+      let carModello = car.modello;
+      console.log("Il modello della macchina è: " + carModello);
+
+      //   nome = "Mario";
+      let macchina = {
+        nome: "Fiat",
+        proprietario: {
+          nome: "Luca",
+          cognome: "Bianchi",
+          saluta: function () {
+            console.log("Ciao, sono " + this.nome);
+          },
+        },
+      };
+
+      macchina.proprietario.saluta();
+      let persona = {
+        nome: "Anna",
+        eta: 30,
+        saluta: function () {
+          console.log("Ciao, sono " + this.nome);
+        },
+      };
+      console.log(persona.nome);
+      persona.saluta();
+
+      //
+      let libro = {
+        titolo: "Il Grande Gatsby",
+        autore: "F. Scott Fitzgerald",
+        annoPubblicazione: 1925,
+        dettagli: {
+          editore: "Scribner",
+          pagine: 218,
+          genere: "Romanzo",
+        },
+      };
+
+      console.log("il titolo del libro è: " + libro.titolo, " scritto da " + libro.autore, "l'editore  è: " + libro.dettagli.editore);
+
+      const cars = [
+        { id: "0wr5678hjgsgr", marca: "Ford", modello: "Mustang", anno: 1969 },
+        { id: "1as2345dfghjk", marca: "Chevrolet", modello: "Camaro", anno: 1970 },
+        { id: "2zx9876vbnmkl", marca: "Dodge", modello: "Charger", anno: 1968 },
+      ];
+
+      console.log(cars);
+      console.table(cars);
+
+      console.log(cars[1].marca);
+
+      cars.push({ id: "3pl4567qwerty", marca: "Pontiac", modello: "GTO", anno: 1967 });
+
+      console.table(cars);
+      console.table(cars[0].marca);
+
+      const frutta = { stagione: ["arancia", "mela", "pera"], verdura: ["carota", "zucchina", "peperone"] };
+
+      console.table(frutta);
+      console.log(frutta.stagione);
+      console.log(frutta.stagione[1]);
+    </script>
+  </body>
+</html>
