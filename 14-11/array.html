@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1>Array in JS</h1>
+
+    <script>
+      let colori = ["rosso", "verde", "blue", "giallo"];
+      console.log(colori);
+      console.log(colori.length);
+      console.log(colori[0]);
+      console.log(colori[4]);
+      console.table(colori);
+
+      let blu = colori[2];
+      console.log("Il colore selezionato è: " + blu);
+      colori.push("viola"); // aggiunto in coda
+      console.table(colori);
+      colori.push("arancione", "nero", "bianco");
+      console.table(colori);
+      let ultimo = colori.pop(); // rimuove l'ultimo elemento
+      console.log(ultimo);
+      console.table(colori);
+      console.log("Colore rimosso: " + ultimo);
+      //iterazione sugli array
+      for (let i = 0; i < colori.length; i++) {
+        console.log("Colore " + i + ": " + colori[i]);
+      }
+    </script>
+  </body>
+</html>
