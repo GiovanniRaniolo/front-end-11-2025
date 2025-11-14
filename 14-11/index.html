@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lezione 1 JS</h1>
+    <script>
+      /* metodi per stampare in console
+        log generico
+        error messaggio di errore
+        warn messaggio di avviso
+        info messaggio informativo
+        */
+      console.log("H3ll0 W0r1d!");
+      console.error("Questo è un messaggio di errore");
+      console.warn("Questo è un messaggio di avviso");
+      console.info("Questo è un messaggio informativo");
+      let x = 10;
+      console.log("Prima il valore di x è: " + x);
+      x = 20;
+      console.log("il valore di x è: " + x);
+      const y = 5;
+      console.log("il valore di y è: " + y);
+      //y = 15; Questo causerà un errore
+
+      let z;
+      console.log("il valore di z è: " + z);
+      z = 30;
+      console.log("il valore di z è: " + z);
+
+      let nome = "Mario";
+      let cognome = "Rossi";
+      let eta = 25;
+
+      console.log("Mi chiamo " + nome + " " + cognome + " e ho " + eta + " anni.");
+      console.log("Ciao " + nome + " " + cognome + ", benvenuto!");
+      //Boolean
+      let isStudente = true;
+      let isFemale = false;
+      console.log("è studente: " + isStudente);
+      //null e undefined
+      let niente = null;
+      let indefinito;
+      console.log("niente intenzionale: " + niente);
+      console.log("indefinito: " + indefinito);
+      console.log(typeof nome);
+      console.log(typeof eta);
+      console.log(typeof isStudente);
+      console.log(typeof niente);
+      let array = [1, 2, 3, 4, 5];
+      console.log(typeof array);
+      let oggetto = { nome: "Mario", cognome: "Rossi" };
+      console.log(typeof oggetto);
+      console.log(typeof indefinito);
+
+      //Operazioni aritmetiche
+      let somma = 10 + 5;
+      console.log("Somma: " + somma);
+      let frazione = 10 / 3;
+      console.log("Frazione: " + frazione);
+      let resto = 10 % 2;
+      console.log("Resto: " + resto);
+      let restoDispari = 17 % 2;
+      console.log("Resto Dispari: " + restoDispari);
+      let moltiplicazione = 4 * 5;
+      console.log("Moltiplicazione: " + moltiplicazione);
+      let potenza = 2 ** 3;
+      console.log("Potenza: " + potenza);
+
+      // Operatori di assegnazione
+      let a = 10;
+      a += 5; // a = a + 5
+      a -= 3; // a = a - 3
+      a++; // a = a + 1
+      console.log("Valore di a dopo incremento: " + a);
+      // Operatori di confronto
+      console.log(10 == 10); // true
+      console.log(10 == "10"); // true
+      console.log(10 === "10"); // false
+      console.log(10 != 5); // true
+      console.log(10 != "10"); // false
+      console.log(10 !== "10"); // true
+    </script>
+  </body>
+</html>
