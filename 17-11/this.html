@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THIS e SCOPE</title>
+  </head>
+  <body>
+    <script>
+      //   const counter = {
+      //     value: 0,
+      //     increase: function () {
+      //       function inner() {
+      //         this.value++;
+      //       }
+      //       inner();
+      //     },
+      //   };
+
+      const counter = {
+        value: 0,
+        increase: function () {
+          const inner = () => {
+            // arrow
+            this.value++;
+          };
+          inner();
+        },
+      };
+
+      counter.increase();
+      console.log(counter.value); // 1 -> funziona!
+
+      counter.increase();
+      console.log(counter.value); // 2 -> funziona!
+    </script>
+  </body>
+</html>
