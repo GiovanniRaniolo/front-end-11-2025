@@ -4,25 +4,27 @@ import Button from "../atoms/Button";
 
 function UserCard({ user, onFollow, isFollowing }) {
   console.log(`UserCard: ${user.name}`);
+
+  const { avatar, name, username, bio, followers, following, isVerified } = user;
   return (
     <div className="user-card">
       <div className="user-header">
-        <Avatar src={user.avatar} alt={user.name} size="large" />
+        <Avatar src={avatar} alt={name} size="large" />
         <div className="user-info">
-          <h3>{user.name}</h3>
-          <p>@{user.username}</p>
-          {user.isVerified && <Badge text="Verificato" type="success" />}
+          <h3>{name}</h3>
+          <p>@{username}</p>
+          {isVerified && <Badge text="Verificato" type="success" />}
         </div>
       </div>
 
-      <p className="user-bio">{user.bio}</p>
+      <p className="user-bio">{bio}</p>
 
       <div className="user-stats">
         <span>
-          <strong>{user.followers}</strong> follower
+          <strong>{followers}</strong> follower
         </span>
         <span>
-          <strong>{user.following}</strong> seguiti
+          <strong>{following}</strong> seguiti
         </span>
       </div>
 
