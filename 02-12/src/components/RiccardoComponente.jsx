@@ -1,9 +1,5 @@
-
-
 function RiccardoComponente() {
-  return (
-    <div>RiccardoComponente</div>
-  )
+  return <div>RiccardoComponente</div>;
 }
 
-export default RiccardoComponente
+export default RiccardoComponente;
