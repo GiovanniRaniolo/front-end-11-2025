@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colori Brand personalizzati */
+  --color-brand-primary: #1e40af;
+  --color-brand-secondary: #3b82f6;
+}
